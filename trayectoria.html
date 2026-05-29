@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trayectoria y Casos - Abg. xxxxxxxxxxxxxxxxxxxxx</title>
+    <style>
+        :root {
+            --primary: #1e293b; --accent: #b45309; --bg: #f8fafc; --text: #334155; --card-bg: #ffffff;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: var(--bg); color: var(--text); line-height: 1.6; }
+        nav { background-color: var(--primary); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: bold; font-size: 1.2rem; letter-spacing: 1px; }
+        nav .links { display: flex; gap: 1.5rem; }
+        nav .links a { color: #94a3b8; text-decoration: none; font-size: 0.95rem; }
+        nav .links a:hover, nav .links a.active { color: white; font-weight: 600; }
+        
+        .header-section { background-color: #0f172a; color: white; padding: 3rem 1rem; text-align: center; }
+        .header-section h1 { margin: 0; font-size: 2rem; color: #ffffff; }
+        
+        .container { max-width: 900px; margin: 3rem auto; padding: 0 1rem; }
+        section { background: var(--card-bg); padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 2rem; }
+        h2 { color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 0; font-size: 1.6rem; text-transform: uppercase; }
+        
+        .timeline-item { border-left: 2px solid var(--accent); padding-left: 1.5rem; position: relative; margin-bottom: 1.5rem; }
+        .timeline-item::before { content: ''; position: absolute; left: -7px; top: 4px; width: 11px; height: 11px; background-color: var(--primary); border-radius: 50%; }
+        .time-date { font-weight: bold; color: var(--accent); }
+        .time-title { font-weight: bold; color: var(--primary); margin: 0.1rem 0; }
+        
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .block-item { background: #f8fafc; padding: 1.5rem; border-radius: 6px; border-left: 4px solid var(--accent); }
+        .block-item h3 { margin-top: 0; color: var(--primary); }
+        
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; padding: 1rem 1.4rem; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 1000; display: flex; align-items: center; gap: 8px; }
+        footer { text-align: center; padding: 2.5rem 1rem; color: #94a3b8; font-size: 0.85rem; background-color: var(--primary); margin-top: 4rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Abg. xxxxxxxxxxxxxx</div>
+        <div class="links">
+            <a href="index.html">Inicio</a>
+            <a href="trayectoria.html" class="active">Trayectoria y Casos</a>
+            <a href="consulta.html">Consulta Profesional</a>
+        </div>
+    </nav>
+
+    <div class="header-section">
+        <h1>Formación Académica & Experiencia Litigante</h1>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2>Mi Formación & Experiencia</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="time-date">xxxx - xxxx</div>
+                    <div class="time-title">xxxxxxxxxxxxxxxxxxxxx (Especialización / Postgrado)</div>
+                    <p style="margin:0; font-size:0.95rem; color:#64748b;">xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="time-date">xxxx - xxxx</div>
+                    <div class="time-title">xxxxxxxxxxxxxxxxxxxxx (Título de Abogacía Oficial)</div>
+                    <p style="margin:0; font-size:0.95rem; color:#64748b;">xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Casos Resueltos de Éxito</h2>
+            <div class="grid-2">
+                <div class="block-item">
+                    <h3>Caso Resuelto xxxxxxxxxxxxx</h3>
+                    <p>xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx.</p>
+                </div>
+                <div class="block-item">
+                    <h3>Caso Resuelto xxxxxxxxxxxxx</h3>
+                    <p>xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <a href="https://wa.me/593900000000?text=Hola" class="whatsapp-float" target="_blank">💬 WhatsApp Legal</a>
+    <footer>&copy; 2026 Abg. xxxxxxxxxxxxxx - Desarrollado por Pixel & Data</footer>
+
+</body>
+</html>
